@@ -1,0 +1,100 @@
+.compare-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 16px;
+  padding: 10px 16px;
+  background: var(--search-bg);
+  color: #fff;
+  font-size: 14px;
+}
+
+.compare-bar button {
+  margin-left: 6px;
+  padding: 6px 14px;
+  border: 1px solid #777;
+  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+}
+
+.compare-bar .compare-bar__primary {
+  border-color: var(--blue);
+  background: var(--blue);
+}
+
+.compare-bar button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.compare {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.compare h2 {
+  margin: 0 0 16px;
+  font-weight: 500;
+}
+
+.compare__pokemon {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.compare__pokemon > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.compare__image {
+  background: var(--card-image);
+  border-radius: 5px;
+}
+
+.compare__image img {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.compare__pokemon small {
+  color: #919191;
+}
+
+.compare__types {
+  display: flex;
+  gap: 4px;
+}
+
+.compare__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.compare__table th,
+.compare__table td {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.compare__table th {
+  background: var(--card-image);
+}
+
+.compare__table td.winner {
+  font-weight: 700;
+  color: #2e9e3e;
+}

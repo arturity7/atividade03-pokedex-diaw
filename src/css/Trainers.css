@@ -1,0 +1,61 @@
+.trainers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.trainer-card {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.trainer-card h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.trainer-card__info {
+  margin: 2px 0 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.trainer-card__team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trainer-card__team button {
+  width: 84px;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  background: var(--card-image);
+  color: var(--text);
+  font-size: 12px;
+}
+
+.trainer-card__team button:hover {
+  outline: 1px solid var(--blue);
+}
+
+.trainer-card__team img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+@media (max-width: 650px) {
+  .trainers {
+    grid-template-columns: 1fr;
+  }
+}

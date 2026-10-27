@@ -1,0 +1,22 @@
+.stat-bar {
+  display: grid;
+  grid-template-columns: 130px 36px 1fr;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.stat-bar__value {
+  font-weight: 600;
+  text-align: right;
+}
+
+.stat-bar__track {
+  height: 12px;
+  background: var(--card-image);
+  border: 1px solid var(--border);
+}
+
+.stat-bar__fill {
+  height: 100%;
+}
