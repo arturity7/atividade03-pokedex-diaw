@@ -1,0 +1,53 @@
+:root {
+  --bg: #e9e9e9;
+  --content: #ffffff;
+  --card-image: #f2f2f2;
+  --text: #212121;
+  --muted: #616161;
+  --border: #d6d6d6;
+  --search-bg: #313131;
+  --blue: #30a7d7;
+  --blue-dark: #1b82b1;
+  --orange: #ee6b2f;
+  --red: #e3350d;
+}
+
+[data-theme='dark'] {
+  --bg: #161616;
+  --content: #232323;
+  --card-image: #2f2f2f;
+  --text: #e8e8e8;
+  --muted: #a8a8a8;
+  --border: #3d3d3d;
+  --search-bg: #0f0f0f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 15px;
+  color: var(--text);
+  background: var(--bg);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--blue);
+}
